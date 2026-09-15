@@ -12,7 +12,7 @@
 <?rfc subcompact="no"?>
 <?rfc strict='yes'?>
 <?rfc iprnotified='no'?>
-<rfc category="std" docName="draft-templin-6man-aero-omni-amen-15"
+<rfc category="std" docName="draft-templin-6man-aero-omni-amen-16"
 ipr="trust200902" updates="">
   <front>
     <title abbrev="AERO/OMNI Amendments (Vol. 1)">AERO/OMNI Base Specification Amendments (Volume 1)</title>
@@ -38,7 +38,7 @@ ipr="trust200902" updates="">
       </address>
     </author>
 
-    <date day="14" month="September" year="2026"/>
+    <date day="15" month="September" year="2026"/>
 
     <keyword>I-D</keyword>
 
@@ -372,16 +372,15 @@ ipr="trust200902" updates="">
 
         <t>To perform address resolution, OMNI link Clients forward
         address resolution requests in the form of IPv6 Neighbor
-        Solicitation (NS) messages using the MLA of the target
-        as the Target Address into the OMNI link. Standard BGP routing
-        then directs the request to a Gateway which consults the DNS
-        to determine the MLA of the target's MAP. The Gateway consults
-        the reverse-DNS based on the target address, and the resolution
-        returns HIP resource records per <xref target="RFC8005"/> that
-        include the MAP address as a rendezvous server address. The
-        Gateway then forwards the NS to the MAP which returns a fully
-        qualified address resolution response in the form of an IPv6
-        Neighbor Advertisement (NA) message.</t>
+        Solicitation (NS) messages into the OMNI link using the MLA
+        or MNP/FNP address of the target as the Target Address. Standard
+        BGP routing then directs the request to a Gateway which consults
+        the DNS to determine the MLA of the target's MAP. The Gateway
+        consults the reverse-DNS based on the target address to
+        obtain an AAAA record that encodes the MLA of the target's
+        MAP. The Gateway then forwards the NS to the MAP which returns
+        a fully qualified address resolution response in the form of
+        an IPv6 Neighbor Advertisement (NA) message.</t>
 
         <t>By maintaining mobile node to MAP mappings in a scalable
         ancillary lookup directory database, the BGP routing system
@@ -759,7 +758,7 @@ ipr="trust200902" updates="">
         cache by the RA destination to rewrite the OAL destination
         to the MLA of the MANET border router then forwards the
         RA. When the MANET border router receives the RA, it
-        uses its cached SRH information to forward the message
+        uses the cached SRH information to forward the message
         along the reverse path of MANET intermediate nodes to
         the RS source.</t>
 
@@ -828,7 +827,10 @@ ipr="trust200902" updates="">
 
     <section anchor="secure" title="Security Considerations">
       <t>The security considerations in the normative references
-      apply.</t>
+      apply. In addition, DNS security per <xref target="RFC9364"/>
+      is assumed to ensure the authenticity of addresses and public
+      keys encoded in resource records. The (secured) DNS therefore
+      serves as a Public Key Infrastructure (PKI) for AERO/OMNI.</t>
     </section>
 
     <section anchor="ack" title="Acknowledgements">
@@ -878,6 +880,8 @@ ipr="trust200902" updates="">
       <?rfc include="reference.RFC.3724"?>
 
       <?rfc include="reference.RFC.8005"?>
+
+      <?rfc include="reference.RFC.9364"?>
 
       <?rfc include="reference.I-D.ietf-manet-inet-gap-analysis"?>
 
