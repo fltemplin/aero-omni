@@ -4,12 +4,12 @@
 
 Network Working Group                                 F. L. Templin, Ed.
 Internet-Draft                                        The Boeing Company
-Intended status: Standards Track                       15 September 2026
-Expires: 19 March 2027
+Intended status: Standards Track                         14 October 2026
+Expires: 17 April 2027
 
 
            AERO/OMNI Base Specification Amendments (Volume 1)
-                  draft-templin-6man-aero-omni-amen-16
+                  draft-templin-6man-aero-omni-amen-17
 
 Abstract
 
@@ -35,7 +35,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 19 March 2027.
+   This Internet-Draft will expire on 17 April 2027.
 
 Copyright Notice
 
@@ -53,9 +53,9 @@ Copyright Notice
 
 
 
-Templin                   Expires 19 March 2027                 [Page 1]
+Templin                   Expires 17 April 2027                 [Page 1]
 
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
 
 
 Table of Contents
@@ -85,7 +85,7 @@ Table of Contents
    6.  Acknowledgements  . . . . . . . . . . . . . . . . . . . . . .  17
    7.  References  . . . . . . . . . . . . . . . . . . . . . . . . .  17
      7.1.  Normative References  . . . . . . . . . . . . . . . . . .  17
-     7.2.  Informative References  . . . . . . . . . . . . . . . . .  18
+     7.2.  Informative References  . . . . . . . . . . . . . . . . .  19
    Appendix A.  Change Log . . . . . . . . . . . . . . . . . . . . .  20
    Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .  21
 
@@ -109,9 +109,9 @@ Table of Contents
 
 
 
-Templin                   Expires 19 March 2027                 [Page 2]
+Templin                   Expires 17 April 2027                 [Page 2]
 
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
 
 
    segments through Gateway-to-Gateway peerings as first suggested in
@@ -165,9 +165,9 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
 
 
 
-Templin                   Expires 19 March 2027                 [Page 3]
+Templin                   Expires 17 April 2027                 [Page 3]
 
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
 
 
    respond with packets that use one of the Client's EUN addresses as
@@ -221,9 +221,9 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
 
 
 
-Templin                   Expires 19 March 2027                 [Page 4]
+Templin                   Expires 17 April 2027                 [Page 4]
 
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
 
 
 2.2.  Amendment 1.2: AERO/OMNI MLA Addressing
@@ -277,9 +277,9 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
 
 
 
-Templin                   Expires 19 March 2027                 [Page 5]
+Templin                   Expires 17 April 2027                 [Page 5]
 
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
 
 
    the network layer.  While address resolution is in progress, the
@@ -333,9 +333,9 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
 
 
 
-Templin                   Expires 19 March 2027                 [Page 6]
+Templin                   Expires 17 April 2027                 [Page 6]
 
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
 
 
    The virtual router can announce itself to the network layer
@@ -389,9 +389,9 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
 
 
 
-Templin                   Expires 19 March 2027                 [Page 7]
+Templin                   Expires 17 April 2027                 [Page 7]
 
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
 
 
    OMNI-internal virtual Ethernet interface and for RA messages only
@@ -445,9 +445,9 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
 
 
 
-Templin                   Expires 19 March 2027                 [Page 8]
+Templin                   Expires 17 April 2027                 [Page 8]
 
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
 
 
    Note that MAP Proxy/Servers need only add or replace DNS resource
@@ -501,9 +501,9 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
 
 
 
-Templin                   Expires 19 March 2027                 [Page 9]
+Templin                   Expires 17 April 2027                 [Page 9]
 
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
 
 
    Transmission of surrogate MPs will cause OAL intermediate systems to
@@ -557,9 +557,9 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
 
 
 
-Templin                   Expires 19 March 2027                [Page 10]
+Templin                   Expires 17 April 2027                [Page 10]
 
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
 
 
    When the OAL source includes this extended form of the SRH AFVI TLV
@@ -613,9 +613,9 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
 
 
 
-Templin                   Expires 19 March 2027                [Page 11]
+Templin                   Expires 17 April 2027                [Page 11]
 
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
 
 
    The Client discovers the list of eligible MAPs for the OMNI link by
@@ -669,9 +669,9 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
 
 
 
-Templin                   Expires 19 March 2027                [Page 12]
+Templin                   Expires 17 April 2027                [Page 12]
 
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
 
 
    multi-hop paths.  IP multicast transmissions only reach single-hop
@@ -725,9 +725,9 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
 
 
 
-Templin                   Expires 19 March 2027                [Page 13]
+Templin                   Expires 17 April 2027                [Page 13]
 
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
 
 
    configured either through random generation with universal/local (U/
@@ -781,9 +781,9 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
 
 
 
-Templin                   Expires 19 March 2027                [Page 14]
+Templin                   Expires 17 April 2027                [Page 14]
 
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
 
 
 2.15.  Amendment 1.15: Prefix Length Requirements
@@ -837,9 +837,9 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
 
 
 
-Templin                   Expires 19 March 2027                [Page 15]
+Templin                   Expires 17 April 2027                [Page 15]
 
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
 
 
    located many OMNI link interior hops away.  Since the MLAs of all
@@ -893,9 +893,9 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
 
 
 
-Templin                   Expires 19 March 2027                [Page 16]
+Templin                   Expires 17 April 2027                [Page 16]
 
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
 
 
    For end-to-end authentication, nodes that verify the authentication
@@ -911,8 +911,10 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
 3.  Implementation Status
 
    A write-from-scratch reference implementation is under active
-   development, with release version v1.0 tagged on June 2, 2026 (to be
-   made available for public release in the near future).
+   development, with release version v1.0 tagged on October 14, 2026.
+   Source code available at:
+
+      https://github.com/Boeing/aero-omni
 
 4.  IANA Considerations
 
@@ -939,30 +941,31 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
               Templin, F., Saccone, G., Dawra, G., Lindem, A., and V.
               Moreno, "A Simple BGP-based Mobile Routing System for the
               Aeronautical Telecommunications Network", Work in
-              Progress, Internet-Draft, draft-ietf-rtgwg-atn-bgp-32, 25
-              August 2026, <https://datatracker.ietf.org/doc/html/draft-
-              ietf-rtgwg-atn-bgp-32>.
+              Progress, Internet-Draft, draft-ietf-rtgwg-atn-bgp-34, 7
+              October 2026, <https://datatracker.ietf.org/doc/html/
+              draft-ietf-rtgwg-atn-bgp-34>.
+
+
+
+
+
+Templin                   Expires 17 April 2027                [Page 17]
+
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
+
 
    [I-D.templin-6man-aero3]
               Templin, F., "Automatic Extended Route Optimization
               (AERO)", Work in Progress, Internet-Draft, draft-templin-
-
-
-
-Templin                   Expires 19 March 2027                [Page 17]
-
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
-
-
               6man-aero3-60, 28 February 2026,
               <https://datatracker.ietf.org/doc/html/draft-templin-6man-
               aero3-60>.
 
    [I-D.templin-6man-mla]
               Templin, F., "IPv6 Addresses for Ad Hoc Networks", Work in
-              Progress, Internet-Draft, draft-templin-6man-mla-33, 30
-              July 2026, <https://datatracker.ietf.org/doc/html/draft-
-              templin-6man-mla-33>.
+              Progress, Internet-Draft, draft-templin-6man-mla-34, 7
+              October 2026, <https://datatracker.ietf.org/doc/html/
+              draft-templin-6man-mla-34>.
 
    [I-D.templin-6man-omni3]
               Templin, F., "Transmission of IP Packets over Overlay
@@ -999,16 +1002,15 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
               (DHCPv6)", STD 102, RFC 9915, DOI 10.17487/RFC9915,
               January 2026, <https://www.rfc-editor.org/info/rfc9915>.
 
-7.2.  Informative References
 
 
 
-
-
-Templin                   Expires 19 March 2027                [Page 18]
+Templin                   Expires 17 April 2027                [Page 18]
 
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
 
+
+7.2.  Informative References
 
    [CERF1]    Cerf, V. and R. Kahn, "A Protocol for Packet Network
               Intercommunication,
@@ -1021,9 +1023,9 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
    [I-D.ietf-6man-sub-link-scope-multicast]
               Lamparter, D. E., "Sub-Link Scoped IPv6 Multicast
               Addressing", Work in Progress, Internet-Draft, draft-ietf-
-              6man-sub-link-scope-multicast-00, 15 March 2026,
+              6man-sub-link-scope-multicast-01, 16 September 2026,
               <https://datatracker.ietf.org/doc/html/draft-ietf-6man-
-              sub-link-scope-multicast-00>.
+              sub-link-scope-multicast-01>.
 
    [I-D.ietf-manet-inet-gap-analysis]
               Templin, F. and D. J. Jakubisin, "MANET Internetworking:
@@ -1055,16 +1057,18 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
               DOI 10.17487/RFC4903, June 2007,
               <https://www.rfc-editor.org/info/rfc4903>.
 
+
+
+
+
+Templin                   Expires 17 April 2027                [Page 19]
+
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
+
+
    [RFC6621]  Macker, J., Ed., "Simplified Multicast Forwarding",
               RFC 6621, DOI 10.17487/RFC6621, May 2012,
               <https://www.rfc-editor.org/info/rfc6621>.
-
-
-
-Templin                   Expires 19 March 2027                [Page 19]
-
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
-
 
    [RFC8005]  Laganier, J., "Host Identity Protocol (HIP) Domain Name
               System (DNS) Extension", RFC 8005, DOI 10.17487/RFC8005,
@@ -1111,16 +1115,16 @@ Appendix A.  Change Log
 
    *  Updated DNS considerations under scalable mapping.
 
+
+
+Templin                   Expires 17 April 2027                [Page 20]
+
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
+
+
    *  Now also citing atn-bgp draft.
 
    Differences from -11 to -12:
-
-
-
-Templin                   Expires 19 March 2027                [Page 20]
-
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)       September 2026
-
 
    *  Updated DNS considerations under scalable mapping.
 
@@ -1169,8 +1173,4 @@ Author's Address
 
 
 
-
-
-
-
-Templin                   Expires 19 March 2027                [Page 21]
+Templin                   Expires 17 April 2027                [Page 21]

@@ -12,7 +12,7 @@
 <?rfc subcompact="no"?>
 <?rfc strict='yes'?>
 <?rfc iprnotified='no'?>
-<rfc category="std" docName="draft-templin-6man-aero-omni-amen-16"
+<rfc category="std" docName="draft-templin-6man-aero-omni-amen-17"
 ipr="trust200902" updates="">
   <front>
     <title abbrev="AERO/OMNI Amendments (Vol. 1)">AERO/OMNI Base Specification Amendments (Volume 1)</title>
@@ -38,7 +38,7 @@ ipr="trust200902" updates="">
       </address>
     </author>
 
-    <date day="15" month="September" year="2026"/>
+    <date day="14" month="October" year="2026"/>
 
     <keyword>I-D</keyword>
 
@@ -817,8 +817,9 @@ ipr="trust200902" updates="">
     <section anchor="impl" title="Implementation Status">
       <t>A write-from-scratch reference implementation is under
       active development, with release version v1.0 tagged on
-      June 2, 2026 (to be made available for public release
-      in the near future).</t>
+      October 14, 2026. Source code available at:<list style="hanging">
+        <t>https://github.com/Boeing/aero-omni</t>
+      </list></t>
     </section>
 
     <section anchor="iana" title="IANA Considerations">
