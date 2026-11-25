@@ -12,7 +12,7 @@
 <?rfc subcompact="no"?>
 <?rfc strict='yes'?>
 <?rfc iprnotified='no'?>
-<rfc category="std" docName="draft-templin-6man-aero-omni-amen-17"
+<rfc category="std" docName="draft-templin-6man-aero-omni-amen-19"
 ipr="trust200902" updates="">
   <front>
     <title abbrev="AERO/OMNI Amendments (Vol. 1)">AERO/OMNI Base Specification Amendments (Volume 1)</title>
@@ -38,7 +38,7 @@ ipr="trust200902" updates="">
       </address>
     </author>
 
-    <date day="14" month="October" year="2026"/>
+    <date day="23" month="November" year="2026"/>
 
     <keyword>I-D</keyword>
 
@@ -654,6 +654,21 @@ ipr="trust200902" updates="">
         by assigning a new randomly-generated MAC address) to
         ensure routing system integrity.</t>
 
+        <t>In some use cases (e.g., 5G Non-Terrestrial Networks (NTN)),
+        a single interface may serve as both an Internetwork underlay
+        interface and a MANET interface. In that case, the interface
+        may discover Internetwork neighbors on an uplink channel and
+        MANET neighbors on a sidelink channel while engaging the OMNI
+        interface for forwarding between the distinct channels. The
+        uplink channel configures an LLA and a provider-aggregated
+        IP address, and supports OMNI-encapsulated forwarding to
+        Internetwork destinations. The sidelink channel configures
+        an LLA and MLA and supports multi-hop forwarding between
+        MANET neighbors. Direct forwarding between channels without
+        engaging the OMNI adaptation layer must be administratively
+        disabled, while further details for maintaining proper
+        channel separation are an implementation matter.</t>
+
         <t>For further discussion on MANET Architectural Layering and
         addressing, see: <xref target="I-D.ietf-manet-inet-gap-analysis"/>.</t>
 
@@ -812,6 +827,32 @@ ipr="trust200902" updates="">
         secured public key infrastructure for OMNI link adaptation
         layer authentication.</t>
       </section>
+
+      <section anchor="amen1.18" title="Amendment 1.18: Accommodating Path Changes">
+        <t>Section 4.15.5 of <xref target="I-D.templin-6man-aero3"/>
+        discusses actions taken by OAL intermediate systems and
+        destinations upon detection of a path change due to mobility.
+        The section calls for a new ICMPv6 Parameter Problem code
+        "Compressed header expected" and directs the OAL destination
+        to return an ICMPv6 Parameter Problem message with this code
+        upon receipt of packets with uncompressed headers. However,
+        there is no need to distinguish this condition from an
+        ordinary OAL destination mobility event since it is sufficient
+        to return an indication that something in the path (up to and
+        possibly including the destination's underlay interface
+        address) has changed.</t>
+
+        <t>Upon detecting a path change resulting in the receipt of
+        packets with uncompressed headers, the OAL destination should
+        therefore send Mobility Update Messaging uNA messages the same as
+        discussed in Section 4.15.4 of <xref target="I-D.templin-6man-aero3"/>
+        subject to rate limiting. The OAL source regards these messages
+        as an indication to send new Multilink Pilot (MP) messages to
+        refresh the AFVI state in the forward path to this specific
+        underlay interface of the destination. Therefore, there is no
+        need for a new ICMPv6 Parameter Problem code and the request
+        should be removed from the IANA Considerations section.</t>  
+      </section>
     </section>
 
     <section anchor="impl" title="Implementation Status">
@@ -947,6 +988,19 @@ ipr="trust200902" updates="">
 
     <section title="Change Log">
       <t>&lt;&lt; RFC Editor - remove prior to publication &gt;&gt;</t>
+      <t>Differences from -18 to -19:<list style="symbols">
+        <t>Added amendment 1.18.</t>
+      </list></t>
+
+      <t>Differences from -15 to -18:<list style="symbols">
+        <t>Introduced concept of a single interface with both uplink
+        and sidelink channels.</t>
+
+        <t>Implementation Status update.</t>
+
+        <t>DNS and DNS security updates.</t>
+      </list></t>
+
       <t>Differences from -14 to -15:<list style="symbols">
         <t>Added amendments 1.16 and 1.17.</t>
       </list></t>

@@ -4,12 +4,12 @@
 
 Network Working Group                                 F. L. Templin, Ed.
 Internet-Draft                                        The Boeing Company
-Intended status: Standards Track                         14 October 2026
-Expires: 17 April 2027
+Intended status: Standards Track                        23 November 2026
+Expires: 27 May 2027
 
 
            AERO/OMNI Base Specification Amendments (Volume 1)
-                  draft-templin-6man-aero-omni-amen-17
+                  draft-templin-6man-aero-omni-amen-19
 
 Abstract
 
@@ -35,7 +35,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 17 April 2027.
+   This Internet-Draft will expire on 27 May 2027.
 
 Copyright Notice
 
@@ -53,9 +53,9 @@ Copyright Notice
 
 
 
-Templin                   Expires 17 April 2027                 [Page 1]
+Templin                    Expires 27 May 2027                  [Page 1]
 
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)        November 2026
 
 
 Table of Contents
@@ -79,15 +79,16 @@ Table of Contents
      2.15. Amendment 1.15: Prefix Length Requirements  . . . . . . .  15
      2.16. Amendment 1.16: OMNI Link Segment Routing . . . . . . . .  15
      2.17. Amendment 1.17: OMNI Link Security  . . . . . . . . . . .  16
-   3.  Implementation Status . . . . . . . . . . . . . . . . . . . .  17
-   4.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .  17
-   5.  Security Considerations . . . . . . . . . . . . . . . . . . .  17
-   6.  Acknowledgements  . . . . . . . . . . . . . . . . . . . . . .  17
-   7.  References  . . . . . . . . . . . . . . . . . . . . . . . . .  17
-     7.1.  Normative References  . . . . . . . . . . . . . . . . . .  17
-     7.2.  Informative References  . . . . . . . . . . . . . . . . .  19
-   Appendix A.  Change Log . . . . . . . . . . . . . . . . . . . . .  20
-   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .  21
+     2.18. Amendment 1.18: Accommodating Path Changes  . . . . . . .  17
+   3.  Implementation Status . . . . . . . . . . . . . . . . . . . .  18
+   4.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .  18
+   5.  Security Considerations . . . . . . . . . . . . . . . . . . .  18
+   6.  Acknowledgements  . . . . . . . . . . . . . . . . . . . . . .  18
+   7.  References  . . . . . . . . . . . . . . . . . . . . . . . . .  18
+     7.1.  Normative References  . . . . . . . . . . . . . . . . . .  18
+     7.2.  Informative References  . . . . . . . . . . . . . . . . .  20
+   Appendix A.  Change Log . . . . . . . . . . . . . . . . . . . . .  21
+   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .  22
 
 1.  Introduction
 
@@ -105,15 +106,15 @@ Table of Contents
    network of networks concept that emerged from the earliest days of
    Internetworking [CERF1][KAHN][POUZIN].  The concept has carried
    forward to the present day where the Internet has become successful
-   beyond measure.  The AERO/OMNI services concatenate Internetwork
 
 
 
-Templin                   Expires 17 April 2027                 [Page 2]
+Templin                    Expires 27 May 2027                  [Page 2]
 
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)        November 2026
 
 
+   beyond measure.  The AERO/OMNI services concatenate Internetwork
    segments through Gateway-to-Gateway peerings as first suggested in
    "Interconnection of Packet switching Networks" [POUZIN] and later
    formalized in the "Catenet Model for Internetworking (IEN48)"
@@ -161,15 +162,15 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
    address [RFC4291] corresponding to the MNP with the OMNI interface
    but does not assign it to the interface.  For example, if the Client
    receives the IPv6 MNP PD 2001:db8:1::/48, it can either accept
-   packets with an SRA address 2001:db8:1:*::/64 as the destination and
 
 
 
-Templin                   Expires 17 April 2027                 [Page 3]
+Templin                    Expires 27 May 2027                  [Page 3]
 
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)        November 2026
 
 
+   packets with an SRA address 2001:db8:1:*::/64 as the destination and
    respond with packets that use one of the Client's EUN addresses as
    the source or forward the packet to an EUN router that configures a
    more-specific sub-prefix of the ::/48.  In the first case, the
@@ -220,10 +221,9 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
 
 
 
-
-Templin                   Expires 17 April 2027                 [Page 4]
+Templin                    Expires 27 May 2027                  [Page 4]
 
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)        November 2026
 
 
 2.2.  Amendment 1.2: AERO/OMNI MLA Addressing
@@ -277,9 +277,9 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
 
 
 
-Templin                   Expires 17 April 2027                 [Page 5]
+Templin                    Expires 27 May 2027                  [Page 5]
 
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)        November 2026
 
 
    the network layer.  While address resolution is in progress, the
@@ -333,9 +333,9 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
 
 
 
-Templin                   Expires 17 April 2027                 [Page 6]
+Templin                    Expires 27 May 2027                  [Page 6]
 
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)        November 2026
 
 
    The virtual router can announce itself to the network layer
@@ -389,9 +389,9 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
 
 
 
-Templin                   Expires 17 April 2027                 [Page 7]
+Templin                    Expires 27 May 2027                  [Page 7]
 
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)        November 2026
 
 
    OMNI-internal virtual Ethernet interface and for RA messages only
@@ -445,9 +445,9 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
 
 
 
-Templin                   Expires 17 April 2027                 [Page 8]
+Templin                    Expires 27 May 2027                  [Page 8]
 
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)        November 2026
 
 
    Note that MAP Proxy/Servers need only add or replace DNS resource
@@ -501,9 +501,9 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
 
 
 
-Templin                   Expires 17 April 2027                 [Page 9]
+Templin                    Expires 27 May 2027                  [Page 9]
 
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)        November 2026
 
 
    Transmission of surrogate MPs will cause OAL intermediate systems to
@@ -557,9 +557,9 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
 
 
 
-Templin                   Expires 17 April 2027                [Page 10]
+Templin                    Expires 27 May 2027                 [Page 10]
 
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)        November 2026
 
 
    When the OAL source includes this extended form of the SRH AFVI TLV
@@ -613,9 +613,9 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
 
 
 
-Templin                   Expires 17 April 2027                [Page 11]
+Templin                    Expires 27 May 2027                 [Page 11]
 
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)        November 2026
 
 
    The Client discovers the list of eligible MAPs for the OMNI link by
@@ -669,9 +669,9 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
 
 
 
-Templin                   Expires 17 April 2027                [Page 12]
+Templin                    Expires 27 May 2027                 [Page 12]
 
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)        November 2026
 
 
    multi-hop paths.  IP multicast transmissions only reach single-hop
@@ -725,9 +725,9 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
 
 
 
-Templin                   Expires 17 April 2027                [Page 13]
+Templin                    Expires 27 May 2027                 [Page 13]
 
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)        November 2026
 
 
    configured either through random generation with universal/local (U/
@@ -742,6 +742,20 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
    MAC address the MANET router must detect and deconflict the
    duplication (e.g., by assigning a new randomly-generated MAC address)
    to ensure routing system integrity.
+
+   In some use cases (e.g., 5G Non-Terrestrial Networks (NTN)), a single
+   interface may serve as both an Internetwork underlay interface and a
+   MANET interface.  In that case, the interface may discover
+   Internetwork neighbors on an uplink channel and MANET neighbors on a
+   sidelink channel while engaging the OMNI interface for forwarding
+   between the distinct channels.  The uplink channel configures an LLA
+   and a provider-aggregated IP address, and supports OMNI-encapsulated
+   forwarding to Internetwork destinations.  The sidelink channel
+   configures an LLA and MLA and supports multi-hop forwarding between
+   MANET neighbors.  Direct forwarding between channels without engaging
+   the OMNI adaptation layer must be administratively disabled, while
+   further details for maintaining proper channel separation are an
+   implementation matter.
 
    For further discussion on MANET Architectural Layering and
    addressing, see: [I-D.ietf-manet-inet-gap-analysis].
@@ -764,6 +778,14 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
    interface will receive raw IP packets from the host operating system
    with no L2 headers and can then apply OMNI encapsulation before
    forwarding via an underlay interface.  In the reverse direction, the
+
+
+
+Templin                    Expires 27 May 2027                 [Page 14]
+
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)        November 2026
+
+
    OMNI interface receives encapsulated packets from underlay
    interfaces, then decapsulates and delivers them as raw IP packets to
    the host operating system.
@@ -778,13 +800,6 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
    layer addresses, the virtual router entity within the interface uses
    the link-local subnet router address "fe80::/128" as the destination
    address of RS messages and source address of RA messages.
-
-
-
-Templin                   Expires 17 April 2027                [Page 14]
-
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
-
 
 2.15.  Amendment 1.15: Prefix Length Requirements
 
@@ -819,6 +834,14 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
    destination.  This RS source then includes an OAL SRH with its own
    MLA as the most recently visited OAL destination then forwards the RS
    to the first OAL intermediate node on the path toward the MANET
+
+
+
+Templin                    Expires 27 May 2027                 [Page 15]
+
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)        November 2026
+
+
    border router.  Each OAL intermediate node then rewrites the SRH with
    its own MLA as the most recently visited OAL destination (while
    including all previous MLA destinations in their proper visited
@@ -834,14 +857,6 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
    MLA.  If the FHS Proxy/Server is not the named MAP, it then rewrites
    the SRH and OAL source to its own MLA, rewrites the OAL destination
    to the MLA of the MAP, and forwards the RS to the MAP which may be
-
-
-
-Templin                   Expires 17 April 2027                [Page 15]
-
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
-
-
    located many OMNI link interior hops away.  Since the MLAs of all
    Proxy/Servers and Gateways are routable within the OMNI link
    interior, no further OAL address rewriting occurs on the path to the
@@ -875,6 +890,14 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
    adaptation layer authentication service controlling access to upper
    layer Internetworking services is therefore supported.
 
+
+
+
+Templin                    Expires 27 May 2027                 [Page 16]
+
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)        November 2026
+
+
    While end-to-end adaptation layer authentication prevents
    unauthorized access to upper layer Internetworking services, hop-by-
    hop adaptation layer authentication is also required to ensure
@@ -891,13 +914,6 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
    layer security services such as IPsec in the OMNI link interdomain or
    MACsec in any OMNI link ingress/egress MANETs.
 
-
-
-Templin                   Expires 17 April 2027                [Page 16]
-
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
-
-
    For end-to-end authentication, nodes that verify the authentication
    signature perform a reverse-DNS lookup on the IPv6 source address of
    the encapsulated packet.  For hop-by-hop authentication, nodes that
@@ -907,6 +923,47 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
    address which the node then uses to verify the authentication
    signature.  The DNS therefore provides a secured public key
    infrastructure for OMNI link adaptation layer authentication.
+
+2.18.  Amendment 1.18: Accommodating Path Changes
+
+   Section 4.15.5 of [I-D.templin-6man-aero3] discusses actions taken by
+   OAL intermediate systems and destinations upon detection of a path
+   change due to mobility.  The section calls for a new ICMPv6 Parameter
+   Problem code "Compressed header expected" and directs the OAL
+   destination to return an ICMPv6 Parameter Problem message with this
+   code upon receipt of packets with uncompressed headers.  However,
+   there is no need to distinguish this condition from an ordinary OAL
+   destination mobility event since it is sufficient to return an
+   indication that something in the path (up to and possibly including
+   the destination's underlay interface address) has changed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Templin                    Expires 27 May 2027                 [Page 17]
+
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)        November 2026
+
+
+   Upon detecting a path change resulting in the receipt of packets with
+   uncompressed headers, the OAL destination should therefore send
+   Mobility Update Messaging uNA messages the same as discussed in
+   Section 4.15.4 of [I-D.templin-6man-aero3] subject to rate limiting.
+   The OAL source regards these messages as an indication to send new
+   Multilink Pilot (MP) messages to refresh the AFVI state in the
+   forward path to this specific underlay interface of the destination.
+   Therefore, there is no need for a new ICMPv6 Parameter Problem code
+   and the request should be removed from the IANA Considerations
+   section.
 
 3.  Implementation Status
 
@@ -941,17 +998,16 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
               Templin, F., Saccone, G., Dawra, G., Lindem, A., and V.
               Moreno, "A Simple BGP-based Mobile Routing System for the
               Aeronautical Telecommunications Network", Work in
-              Progress, Internet-Draft, draft-ietf-rtgwg-atn-bgp-34, 7
+              Progress, Internet-Draft, draft-ietf-rtgwg-atn-bgp-35, 28
               October 2026, <https://datatracker.ietf.org/doc/html/
-              draft-ietf-rtgwg-atn-bgp-34>.
+              draft-ietf-rtgwg-atn-bgp-35>.
 
 
 
 
-
-Templin                   Expires 17 April 2027                [Page 17]
+Templin                    Expires 27 May 2027                 [Page 18]
 
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)        November 2026
 
 
    [I-D.templin-6man-aero3]
@@ -1005,9 +1061,9 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
 
 
 
-Templin                   Expires 17 April 2027                [Page 18]
+Templin                    Expires 27 May 2027                 [Page 19]
 
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)        November 2026
 
 
 7.2.  Informative References
@@ -1028,11 +1084,12 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
               sub-link-scope-multicast-01>.
 
    [I-D.ietf-manet-inet-gap-analysis]
-              Templin, F. and D. J. Jakubisin, "MANET Internetworking:
-              Problem Statement and Gap Analysis", Work in Progress,
-              Internet-Draft, draft-ietf-manet-inet-gap-analysis-10, 27
-              August 2026, <https://datatracker.ietf.org/doc/html/draft-
-              ietf-manet-inet-gap-analysis-10>.
+              Templin, F. and D. J. Jakubisin, "MANET Internetworking
+              Architecture, Problem Statement and Gap Analysis", Work in
+              Progress, Internet-Draft, draft-ietf-manet-inet-gap-
+              analysis-11, 23 October 2026,
+              <https://datatracker.ietf.org/doc/html/draft-ietf-manet-
+              inet-gap-analysis-11>.
 
    [KAHN]     Perry, T., "The Great Interconnector, IEEE Spectrum,
               https://spectrum.ieee.org/bob-kahn-2667754905", May 2024.
@@ -1060,10 +1117,9 @@ Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
 
 
 
-
-Templin                   Expires 17 April 2027                [Page 19]
+Templin                    Expires 27 May 2027                 [Page 20]
 
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)        November 2026
 
 
    [RFC6621]  Macker, J., Ed., "Simplified Multicast Forwarding",
@@ -1103,6 +1159,27 @@ Appendix A.  Change Log
 
    << RFC Editor - remove prior to publication >>
 
+   Differences from -18 to -19:
+
+   *  Added amendment 1.18.
+
+   Differences from -15 to -18:
+
+   *  Introduced concept of a single interface with both uplink and
+      sidelink channels.
+
+   *  Implementation Status update.
+
+
+
+
+Templin                    Expires 27 May 2027                 [Page 21]
+
+Internet-Draft        AERO/OMNI Amendments (Vol. 1)        November 2026
+
+
+   *  DNS and DNS security updates.
+
    Differences from -14 to -15:
 
    *  Added amendments 1.16 and 1.17.
@@ -1114,13 +1191,6 @@ Appendix A.  Change Log
    Differences from -12 to -13:
 
    *  Updated DNS considerations under scalable mapping.
-
-
-
-Templin                   Expires 17 April 2027                [Page 20]
-
-Internet-Draft        AERO/OMNI Amendments (Vol. 1)         October 2026
-
 
    *  Now also citing atn-bgp draft.
 
@@ -1159,18 +1229,4 @@ Author's Address
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Templin                   Expires 17 April 2027                [Page 21]
+Templin                    Expires 27 May 2027                 [Page 22]
